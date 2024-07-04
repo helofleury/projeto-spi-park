@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>SPI PARK</title>
+  </head>
+  <body>
+    <header id="header">
+      <a href="index.html" id="logo">
+        <img src="img/logo.png" alt="Logo da empresa">
+      </a>
+      <nav id="nav">
+        <button id="btn-mobile" aria-label="Abrir menu" aria-haspopup="true"
+          aria-controls="menu" aria-expanded="false">
+          <span id="hambuguer"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#precos">Preços</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+          <li><a href="#rodape">Contato</a></li>
+          <li><a href="login.html">Entrar</a></li>
+          <li>
+            <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+              <i id="light-mode-icon" class="fas fa-sun"></i>
+              <i id="dark-mode-icon" class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="gambiarra" id="sobre"></div>
+    <section class="ini">
+      <h1>ABERTO 24HORAS</h1><br>
+      <p>Prestação de serviços de recepção e orientação as vagas no
+        estacionamento</p>
+      <p>Estacionamento com seguro, o cliente estaciona e leva as chaves</p>
+    </section>
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+
+        <!--FIM radio buttons-->
+
+        <!--Slide Imagens-->
+        <div class="slide first">
+          <img src="img/1.jpg" alt="Imagem 1">
+        </div>
+        <div class="slide">
+          <img src="img/2.jpeg" alt="Imagem 2">
+        </div>
+        <div class="slide">
+          <img src="img/3.jpeg" alt="Imagem 3">
+        </div>
+        <!--FIM Slide Imagens-->
+
+        <!--Nav Auto-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+        <!--FIM Nav Auto-->
+      </div>
+
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      </div>
+    </div>
+
+    <section class="tabela-precos">
+      <div class="preco-block" id="precos">
+        <!--Tabela 1 de preços-->
+        <h1>TABELA DE PREÇOS</h1>
+        <div id="tab1">
+          <table class="steelBlueCols">
+            <thead>
+              <tr>
+                <th>AVULSO</th>
+                <th>CARRO PEQUENO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>AT&Eacute; 30 MIN</td>
+                <td>R$ 7,00</td>
+              </tr>
+              <tr>
+                <td>AT&Eacute; 1 H</td>
+                <td>R$ 12,00</td>
+              </tr>
+              <tr>
+                <td>AT&Eacute; 2 H</td>
+                <td>R$ 14,00</td>
+              </tr>
+              <tr>
+                <td>D+ HORAS</td>
+                <td> + R$ 3,00</td>
+              </tr>
+              <tr>
+                <td>DIARIA 12 H</td>
+                <td>R$ 18,00</td>
+              </tr>
+              <tr>
+                <td>PERIODO 24 H</td>
+                <td>R$ 30,00</td>
+              </tr>
+            </tbody>
+          </table>
+          <!--Tabela 2 de preços-->
+          <table class="steelBlueCols">
+            <thead>
+              <tr>
+                <th>AVULSO</th>
+                <th>CARRO&nbsp;GRANDE / UTILIT&Aacute;RIO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>AT&Eacute; 30 MIN</td>
+                <td>R$10,00</td>
+              </tr>
+              <tr>
+                <td>AT&Eacute; 1 H</td>
+                <td>R$ 15,00</td>
+              </tr>
+              <tr>
+                <td>AT&Eacute; 2 H</td>
+                <td>R$ 30,00</td>
+              </tr>
+              <tr>
+                <td>D+ HORAS</td>
+                <td>+ R$ 5,00</td>
+              </tr>
+              <tr>
+                <td>DIARIA 12 H</td>
+                <td>R$ 35,00</td>
+              </tr>
+              <tr>
+                <td>PERIODO 24 H</td>
+                <td>R$ 50,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-chegar">
+      <div class="map-block" id="localizacao">
+        <h1>Como Chegar</h1><br>
+        <iframe class="mapa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14632.63539874829!2d-46.78692577928594!3d-23.52678841749567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceff1b4b3debf7%3A0xdd9f03c1342608b8!2sSPI%20Park%20Estacionamentos!5e0!3m2!1spt-BR!2sbr!4v1702257286182!5m2!1spt-BR!2sbr"
+          width="600" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- footer da pagina-->
+    <footer class="footer" id="rodape">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Endereço</h4>
+            <ul>
+              <li><a href="#">R. Erasmo Braga, 131-269 - Pres. Altino</a></li>
+              <li><a href="#">Osasco - SP, 06213-008</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contatos</h4>
+            <ul>
+              <li><a href="#">SAC</a></li>
+              <li><a href="#">(11) 97277-9874</a></li>
+              <li><a href="#"
+                  style="text-transform: lowercase;">spipark@hotmail.com</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Responsáveis</h4>
+            <ul>
+              <li><a href="#">Heloisa </a></li>
+              <li><a href="#">Jiovanna </a></li>
+              <li><a href="#">João</a></li>
+              <li><a href="#">Julia</a></li>
+              <li><a href="#">Leonardo</a></li>
+              <li><a href="#">Vitor</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Redes Sociais</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a
+                href="https://www.osascofacil.com.br/guia/whatsapp.php?id=9585"><i
+                  class="fab fa-whatsapp"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button class="scroll-to-top" onclick="scrollToTop()">Topo</button>
+    <!-- FIM do Footer da pagina, utilizado projeto de base do git-->
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

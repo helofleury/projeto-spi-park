@@ -1,0 +1,787 @@
+/* Variáveis para o modo claro */
+:root {
+  --cor-primaria: #FBBC05;
+  --cor-secundaria: #ecf0f1;
+  --cor-terciaria: #040501;
+  --cor-texto: #110101;
+  --cor-link: rgb(63, 63, 63);
+  --cor-fundo-branco: #ecf0f1;
+  --cor-fundo-preto: #000000;
+  --cor-borda: #555555;
+  --cor-botao: #ecf0f1;
+  --cor-botao-hover: rgb(0, 0, 0);
+  --cor-fundo-botao: rgb(8, 8, 10);
+  --cor-fundo-hover: #ecf0f1;
+}
+
+
+#dark-mode-toggle.dark-mode #dark-mode-icon {
+  display: none;
+
+}
+
+#dark-mode-toggle #sun-icon {
+  display: none;
+
+}
+
+/* Estilos para o dark mode */
+body.dark-mode {
+  background-color: #000000;
+  /* Cor de fundo para o dark mode */
+  color: #ffffff;
+  /* Cor do texto para o dark mode */
+
+
+}
+
+#dark-mode-toggle {
+  margin-top: 16px;
+  border-radius: 20px;
+}
+
+header.dark-mode {
+  background-color: #333333;
+  /* Cor de fundo do cabeçalho no dark mode */
+
+}
+
+nav ul li a.dark-mode {
+  color: #ffffff;
+  /* Cor dos links no cabeçalho no dark mode */
+
+}
+
+.ini.dark-mode {
+  color: #ffffff;
+  /* Cor do texto na section no dark mode */
+}
+
+.ini.dark-mode h1 {
+  color: #ffffff;
+  /* Cor do texto h1 na section ini no dark mode */
+}
+
+
+
+.tabela-precos h1 {
+  color: #000000;
+  /* Cor do texto preto */
+}
+
+.dark-mode {
+
+  color: #ffffff;
+  /* Cor do texto em modo escuro */
+
+}
+
+.dark-mode-text {
+  color: #ffffff;
+  /* Cor do texto em modo escuro */
+
+}
+
+
+.dark-mode .como-chegar {
+  color: #ffffff;
+  /* Cor do texto "como chegar" no modo dark */
+}
+
+
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-decoration: none;
+  font-family: sans-serif;
+  transition: transform 0.3s ease;
+  /* Adiciona transição suave para a transformação */
+
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+#logo img {
+  margin-top: 25px;
+  max-width: 180px;
+  /* Largura máxima da imagem da logo */
+  height: auto;
+  /* Mantém a proporção da imagem */
+}
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FBBC05;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: .4rem;
+}
+
+#menu a {
+  display: block;
+  padding: .5rem;
+}
+
+#btn-mobile {
+  display: none;
+  color: #CAE9FF;
+  border: .1rem solid black;
+  padding: .1rem;
+}
+
+
+section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 800px;
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 50px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid var(--cor-fundo-branco);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: var(--cor-secundaria);
+}
+
+#radio1:checked~.first {
+  margin-left: 0;
+}
+
+#radio2:checked~.first {
+  margin-left: -25%;
+}
+
+#radio3:checked~.first {
+  margin-left: -50%;
+}
+
+.navigation-auto div {
+  border: 2px solid var(--cor-fundo-botao);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto {
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1,
+#radio2:checked~.navigation-auto .auto-btn2,
+#radio3:checked~.navigation-auto .auto-btn3 {
+  background-color: var(--cor-secundaria);
+}
+
+.preco-block {
+  border: 8px solid var(--cor-primaria);
+  border-radius: 40px 0px 40px 0px;
+  background-color: var(--cor-secundaria);
+  height: 450px;
+  margin: 15px;
+  text-align: center;
+}
+
+table.steelBlueCols {
+  border: 1px solid var(--cor-borda);
+  background-color: var(--cor-secundaria);
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: 20px;
+}
+
+table.steelBlueCols td,
+table.steelBlueCols th {
+  border: 2px solid var(--cor-fundo-preto);
+  padding: 5px 5px;
+}
+
+table.steelBlueCols tbody td {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--cor-fundo-preto);
+}
+
+table.steelBlueCols td:nth-child(even) {
+  background: var(--cor-primaria);
+}
+
+table.steelBlueCols thead {
+  background: var(--cor-primaria);
+  border-bottom: 1px solid var(--cor-secundaria);
+}
+
+table.steelBlueCols thead th {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--cor-texto);
+  text-align: left;
+  border-left: 2px solid var(--cor-fundo-preto);
+}
+
+table.steelBlueCols thead th:first-child {
+  border-left: none;
+}
+
+table.steelBlueCols tfoot td {
+  font-size: 13px;
+}
+
+table.steelBlueCols tfoot .links {
+  text-align: right;
+}
+
+table.steelBlueCols tfoot .links a {
+  display: inline-block;
+  background: var(--cor-secundaria);
+  color: #398AA4;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+#tab1 {
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+
+.mapa {
+  width: 800px;
+  max-width: 800px;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  border: 11px double var(--cor-fundo-branco);
+}
+
+.map-block {
+  height: 700px;
+  text-align: center;
+  font-size: 25px;
+  color: var(--cor-fundo-preto);
+  padding: 20px;
+  border-bottom: 2px inset var(--cor-fundo-hover);
+  border-radius: 40px 0px 0px 0px;
+}
+
+
+.footer {
+  background-color: var(--cor-fundo-preto);
+  padding: 30px 0;
+}
+
+.footer-col {
+  width: 15%;
+  padding: 0 15px;
+}
+
+
+.footer-col h4 {
+  font-size: 18px;
+  /*text-transform: capitalize;*/
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+  color: var(--cor-fundo-branco);
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: var(--cor-primaria);
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  /*text-transform: capitalize;*/
+  color: var(--cor-fundo-branco);
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: var(--cor-fundo-branco);
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: var(--cor-fundo-branco);
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: var(--cor-fundo-branco);
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* Distribui os elementos ao longo da linha */
+}
+
+.container ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1070px;
+  margin: auto;
+}
+
+
+
+.ini {
+  text-align: center;
+  color: var(--cor-fundo-preto);
+  margin-bottom: 20px;
+}
+
+.ini h1 {
+  color: var(--cor-fundo-preto);
+}
+
+.ini p {
+  font-size: 20px;
+}
+
+.scroll-to-top {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  background-color: #494949;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.scroll-to-top:hover {
+  background-color: #979797;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+  /* Estilos para dispositivos móveis */
+  #logo img {
+    max-width: 180px;
+    /* Largura máxima da imagem da logo para dispositivos móveis */
+  }
+
+  #btn-mobile {
+    display: block;
+    color: white;
+  }
+
+  #menu {
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0;
+    display: none;
+    /* Oculto por padrão */
+    background-color: #FBBC05;
+    z-index: 1000;
+    transition: .6s;
+    overflow-y: hidden;
+  }
+
+  #nav.active #menu {
+    display: block;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0.5rem;
+    border-bottom: 2px solid white;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+  }
+
+  #hambuguer {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hambuguer::before, #hambuguer::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+
+  #nav.active #hambuguer {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hambuguer::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hambuguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  .mapa {
+    width: 95%;
+    /* Reduz a largura do mapa para 90% da largura disponível */
+    height: 250px;
+    /* Ajuste a altura para dispositivos móveis conforme necessário */
+
+  }
+
+  .map-block {
+    margin-top: 250px;
+
+  }
+
+  .steelBlueCols {
+    width: 100%;
+    /* Torna a tabela ocupar 100% da largura disponível */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .steelBlueCols thead {
+    display: none;
+    /* Oculta o cabeçalho da tabela em dispositivos móveis */
+  }
+
+  .steelBlueCols tbody {
+    display: block;
+    /* Transforma o corpo da tabela em bloco para ajuste vertical */
+  }
+
+  .steelBlueCols tbody td {
+    display: block;
+    /* Exibe cada célula do corpo da tabela como bloco */
+    width: 100%;
+    /* Ocupa toda a largura disponível */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    border: none;
+    /* Remove as bordas das células */
+    border-bottom: 1px solid var(--cor-borda);
+    /* Adiciona borda na parte inferior de cada célula */
+    padding: 10px 0;
+    /* Espaçamento interno das células */
+  }
+
+  .steelBlueCols tbody td:nth-child(odd) {
+    background: var(--cor-secundaria);
+    /* Fundo alternado para células ímpares */
+  }
+
+
+  .slider {
+    width: 100%;
+    /* Torna o slider ocupar 100% da largura disponível */
+    height: auto;
+    /* Altura automática para ajuste de conteúdo */
+    max-height: 300px;
+    /* Define uma altura máxima para o slider */
+    overflow: hidden;
+    /* Esconde qualquer conteúdo que ultrapasse a altura máxima */
+  }
+
+  .slides {
+    width: 500%;
+    /* Ajusta a largura total dos slides para rolagem horizontal */
+    height: auto;
+    /* Altura automática para ajuste de conteúdo */
+  }
+
+  .slide {
+    width: 25%;
+    /* Define a largura de cada slide para ocupar 25% da largura disponível */
+    transition: 2s;
+  }
+
+  .slide img {
+    width: 100%;
+    /* Garante que as imagens dentro dos slides ocupem toda a largura disponível */
+    height: auto;
+    /* Altura automática para ajuste de conteúdo */
+    max-width: 100%;
+    /* Define a largura máxima da imagem como 100% do slide */
+    max-height: 100%;
+    /* Define a altura máxima da imagem como 100% do slide */
+    object-fit: contain;
+    /* Ajusta a imagem para caber dentro do slide sem distorção */
+  }
+
+  .manual-navigation {
+    position: relative;
+    /* Altera a posição para relativa para permitir o posicionamento natural */
+    width: 100%;
+    /* Largura total para ocupar toda a largura disponível */
+    margin-top: 10px;
+    /* Ajusta o espaçamento superior */
+    display: flex;
+    /* Exibe os botões manualmente para navegação */
+    justify-content: center;
+    /* Centraliza os botões horizontalmente */
+    gap: 10px;
+    /* Espaço entre os botões */
+  }
+
+  .manual-btn {
+    border: 2px solid var(--cor-fundo-branco);
+    /* Bordas para botões de navegação */
+    padding: 5px;
+    /* Espaçamento interno */
+    border-radius: 10px;
+    /* Borda arredondada */
+    cursor: pointer;
+    /* Altera o cursor ao passar sobre os botões */
+    transition: 0.3s;
+    /* Transição suave para efeitos visuais */
+  }
+
+  .manual-btn:not(:last-child) {
+    margin-right: 10px;
+    /* Espaçamento à direita para botões, exceto o último */
+  }
+
+  .manual-btn:hover {
+    background-color: var(--cor-secundaria);
+    /* Cor de fundo ao passar sobre os botões */
+  }
+
+  .navigation-auto {
+    display: none;
+    /* Oculta a navegação automática em dispositivos móveis */
+  }
+
+  .footer {
+    background-color: var(--cor-fundo-preto);
+    padding: 30px 0;
+    text-align: center;
+    /* Centraliza o conteúdo do footer */
+
+    /* Adiciona margem ao topo e ao fundo */
+    margin-top: -200px;
+    margin-bottom: 0;
+  }
+
+  .footer-col {
+    width: 100%;
+    /* Define a largura das colunas do footer para ocupar 100% da largura disponível */
+    padding: 0 15px;
+    margin-bottom: 30px;
+    /* Espaçamento inferior entre as colunas */
+  }
+
+  .footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    color: var(--cor-fundo-branco);
+  }
+
+  .footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--cor-primaria);
+    height: 2px;
+    margin-left: 165px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .footer-col ul li a {
+    font-size: 16px;
+    color: var(--cor-fundo-branco);
+    text-decoration: none;
+    font-weight: 300;
+    transition: all 0.3s ease;
+  }
+
+  .footer-col ul li a:hover {
+    color: var(--cor-secundaria);
+  }
+
+  .footer-col .social-links {
+    margin-top: 20px;
+    /* Espaçamento superior para os links sociais */
+  }
+
+  .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--cor-fundo-branco);
+    transition: all 0.5s ease;
+  }
+
+  .footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: var(--cor-fundo-branco);
+  }
+
+}
+
+/* Estilos para desktop */
+@media (min-width: 601px) {
+  #menu {
+    margin-left: auto;
+    /* Alinha o menu à direita */
+  }
+
+
+
+  #header {
+    padding-left: 5rem;
+    /* Aumenta o espaçamento à esquerda do header */
+    padding-right: 5rem;
+    /* Aumenta o espaçamento à direita do header */
+  }
+
+
+  #menu a {
+    padding: 1rem 2.5rem;
+    /* Ajusta o espaçamento dos itens do menu */
+  }
+}

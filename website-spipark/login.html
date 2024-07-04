@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="src/assets/img/logo/logo.jpg"
+            type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <title>SPI PARK</title>
+    </head>
+    <body>
+        <header id="header">
+            <a href="index.html" id="logo">
+                <img src="img/logo.png" alt="Logo da empresa">
+            </a>
+            <nav id="nav">
+                <button id="btn-mobile" aria-label="Abrir menu"
+                    aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">
+                    <span id="hambuguer"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#precos">Preços</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
+                    <li><a href="#rodape">Contato</a></li>
+                    <li><a href="login.html">Entrar</a></li>
+                    <li>
+                        <button id="dark-mode-toggle"
+                            aria-label="Toggle Dark Mode">
+                            <i id="light-mode-icon" class="fas fa-sun"></i>
+                            <i id="dark-mode-icon" class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container2">
+            <div class="content first-content">
+                <div class="first-column">
+                    <h2 class="title title-primary">Bem-vindo!</h2>
+                    <p class="description description-primary">Para se manter
+                        conectado conosco</p>
+                    <p class="description description-primary">Faça login com
+                        suas informações pessoais</p>
+                    <button id="signin" class="btn btn-primary">Entrar</button>
+                </div>
+                <div class="second-column">
+                    <h2 class="title title-second">criar conta</h2>
+                    <div class="social-media">
+                        <ul class="list-social-media">
+                            <a class="link-social-media" href="#">
+                                <li class="item-social-media facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </li>
+                            </a>
+                            <a class="link-social-media" href="#">
+                                <li class="item-social-media">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </li>
+                            </a>
+                            <a class="link-social-media" href="#">
+                                <li class="item-social-media">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </li>
+                            </a>
+                        </ul>
+                    </div><!-- social media -->
+                    <p class="description description-second">ou utilize seu
+                        e-mail para cadastro:</p>
+                    <form class="form">
+                        <label class="label-input" for>
+                            <i class="far fa-user icon-modify"></i>
+                            <input type="text" placeholder="Nome">
+                        </label>
+
+                        <label class="label-input" for>
+                            <i class="far fa-envelope icon-modify"></i>
+                            <input type="email" placeholder="Email">
+                        </label>
+
+                        <label class="label-input" for>
+                            <i class="fas fa-lock icon-modify"></i>
+                            <input type="password" placeholder="Senha">
+                        </label>
+
+                        <button class="btn btn-second">Cadastrar-se</button>
+                    </form>
+                </div><!-- second column -->
+            </div><!-- first content -->
+            <div class="content second-content">
+                <div class="first-column">
+                    <h2 class="title title-primary">Não tem cadastro?</h2>
+                    <p class="description description-primary">Introduza os seus
+                        dados pessoais</p>
+                    <p class="description description-primary">e faça login logo
+                        após</p>
+                    <button id="signup"
+                        class="btn btn-primary">Cadastrar</button>
+                </div>
+                <div class="second-column">
+                    <h2 class="title title-second">Faça o seu login</h2>
+                    <div class="social-media">
+                        <ul class="list-social-media">
+                            <a class="link-social-media" href="#">
+                                <li class="item-social-media">
+                                    <i class="fab fa-facebook-f"></i>
+                                </li>
+                            </a>
+                            <a class="link-social-media" href="#">
+                                <li class="item-social-media">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </li>
+                            </a>
+                            <a class="link-social-media" href="#">
+                                <li class="item-social-media">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </li>
+                            </a>
+                        </ul>
+                    </div><!-- social media -->
+                    <p class="description description-second">ou use sua conta
+                        de e-mail:</p>
+                    <form class="form">
+
+                        <label class="label-input" for>
+                            <i class="far fa-envelope icon-modify"></i>
+                            <input type="email" placeholder="Email">
+                        </label>
+
+                        <label class="label-input" for>
+                            <i class="fas fa-lock icon-modify"></i>
+                            <input type="password" placeholder="Password">
+                        </label>
+
+                        <a class="password" href="#">Esqueceu a senha?</a>
+                        <button class="btn btn-second"
+                            id="loginButton">Entrar</button>
+
+                    </form>
+                </div><!-- second column -->
+            </div><!-- second-content -->
+        </div>
+
+        <!-- footer da pagina-->
+        <footer class="footer" id="rodape">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Endereço</h4>
+                        <ul>
+                            <li><a href="#">R. Erasmo Braga, 131-269 - Pres.
+                                    Altino</a></li>
+                            <li><a href="#">Osasco - SP, 06213-008</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contatos</h4>
+                        <ul>
+                            <li><a href="#">SAC</a></li>
+                            <li><a href="#">(11) 97277-9874</a></li>
+                            <li><a href="#"
+                                    style="text-transform: lowercase;">spipark@hotmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Responsáveis</h4>
+                        <ul>
+                            <li><a href="#">Heloisa </a></li>
+                            <li><a href="#">Jiovanna </a></li>
+                            <li><a href="#">João</a></li>
+                            <li><a href="#">Julia</a></li>
+                            <li><a href="#">Leonardo</a></li>
+                            <li><a href="#">Vitor</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Redes Sociais</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a
+                                href="https://www.osascofacil.com.br/guia/whatsapp.php?id=9585"><i
+                                    class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/script.js"></script>
+        <script src="js/login.js"></script>
+
+    </body>
+</html>
